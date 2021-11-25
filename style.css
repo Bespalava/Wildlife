@@ -1,1 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
+body {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*---------------- Header ----------------*/
+.header__footer {
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+} 
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 19px;
+}
+
+.header__logo-link {
+    font-size: 32px;
+    line-height: 60px;
+    color: #F7F7F7;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__logo-text {
+    padding-right: 15px;
+}
+
+.header__logo-pic {
+    padding-right: 15px;
+}
+
+.header__link {
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+.header__menu_burger {
+    display: none;
+}
+
+.main {
+    background-color: #02160b;
+    margin: 0 auto;
+}
+
+.survival {
+    background-color: #02160b;
+    height: 779px;
+    background: url(./assets/img/fox.svg) no-repeat center;
+    background-size: 1440px;
+    padding-top: 199px;
+    width: 100%;
+}
