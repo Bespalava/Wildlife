@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./assets/fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/fonts/open-sans-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html {
     box-sizing: border-box;
 }
@@ -19,11 +28,12 @@ body {
     margin: 0 auto;
 }
 
-/*---------------- Header ----------------*/
+
 .header__footer {
     margin: 0 auto;
 }
 
+/*---------------- Header ----------------*/
 .header {
     position: fixed;
     top: 0;
@@ -37,6 +47,23 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     padding-top: 19px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    margin-right: 60px;
+}
+
+.header__item:first-child {
+    padding-left: 12px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
 }
 
 .header__logo-link {
@@ -65,10 +92,53 @@ body {
     text-decoration: none;
 }
 
+.header__logo-btn {
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    border: 2px solid #CD6326;
+    background: none;
+    color: #F7F7F7;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.header__logo-pic:hover {
+    opacity: .60;
+    cursor: pointer;
+}
+
+.header__logo-text:hover {
+    opacity: .60;
+    cursor: pointer;
+}
+
+.header__logo-vector:hover {
+    opacity: .60;
+    cursor: pointer;
+}
+
+.header__logo-btn:hover {
+    background: #CD6326;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.header__logo-btn:active {
+    background: #8F5613;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #8F5613;
+    cursor: pointer;
+}
+
 .header__menu_burger {
     display: none;
 }
 
+/*------------------*/
 .main {
     background-color: #02160b;
     margin: 0 auto;
@@ -82,3 +152,28 @@ body {
     padding-top: 199px;
     width: 100%;
 }
+
+/*------------------*/
+.latest_articles {
+    background-color: #cccccc;
+    /* height: 1368px; */
+    background-size: 1440px;
+    background:#CCCCCC;
+    width: 100%;
+}
+/*------------------*/
+.get_notified {
+    background-color: #cccccc;
+    background-size: 1440px;
+    width: 100%;
+}
+
+/*------------------*/
+.footer {
+    height: 359px;
+    background: url(./assets/img/footer.svg) no-repeat center;
+    background-size: 1440px;
+    width: 100%;
+    background-color: #181617;
+}
+
